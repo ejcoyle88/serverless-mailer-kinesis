@@ -8,7 +8,7 @@ const Mailer = require('./lib');
 module.exports.send = (event, context, callback) => {
   const respCallback = callback.bind(this, null);
   event.Records.forEach((r) => {
-    var buffer = new Buffer(record.kinesis.data, 'base64').toString('ascii');
+    var buffer = new Buffer(r.kinesis.data, 'base64').toString('ascii');
     var payload = JSON.parse(buffer);
     const mailer = new Mailer(payload);
     return BbPromise.resolve()
