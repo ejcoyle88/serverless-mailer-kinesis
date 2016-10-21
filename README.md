@@ -17,7 +17,7 @@ Basically a slightly modified version of [serverless-mailer](https://github.com/
 - Clone the service
 
 ```
-git clone https://github.com/ejcoyle88/ekm-mail-queue
+git clone https://github.com/ejcoyle88/serverless-mailer-kinesis
 ```
 
 - Install Dependencies
@@ -69,8 +69,8 @@ Welcome Sam Smith
 You can edit the template text by editing these two files:
 
 ```
-ekm-mail-queue/lib/templates/html.handlebars
-ekm-mail-queue/lib/templates/text.handlebars
+serverless-mailer-kinesis/lib/templates/html.handlebars
+serverless-mailer-kinesis/lib/templates/text.handlebars
 ```
 
 ### Supported Services
@@ -110,7 +110,7 @@ serverless-mailer supports the following 30 service, pre-configured and ready to
 serverless-mailer comes with a `welcome` template for demonstration. You can add/remove templates from the following directory:
 
 ```
-ekm-mail-queue/lib/templates/
+serverless-mailer-kinesis/lib/templates/
 ```
 
 serverless-mailer uses handlebars as the default template engine. You can use any other template engine by adding it to the module's `package.json` file and update dependencies with `npm install`.
