@@ -1,5 +1,8 @@
-# ✉️ serverless-mailer
-Serverless Service for sending emails. Compatible with Serverless version `1.0.0-rc.2`.
+# ekm-mail-queue
+An AWS Lambda function for handling email via [nodemailer](https://nodemailer.com/).
+Basically an edited version of [serverless-mailer](https://github.com/eahefnawy/serverless-mailer), all credit to those guys.
+
+This should be connected to an AWS Kinesis stream, and will pick up mail in the queue and fire it off to the selected provider.
 
 ### Features
 
@@ -15,7 +18,7 @@ Serverless Service for sending emails. Compatible with Serverless version `1.0.0
 - Clone the service
 
 ```
-git clone https://github.com/eahefnawy/serverless-mailer
+git clone https://github.com/ejcoyle88/ekm-mail-queue
 ```
 
 - Install Dependencies
@@ -67,8 +70,8 @@ Welcome Sam Smith
 You can edit the template text by editing these two files:
 
 ```
-serverless-mailer/lib/templates/html.handlebars
-serverless-mailer/lib/templates/text.handlebars
+ekm-mail-queue/lib/templates/html.handlebars
+ekm-mail-queue/lib/templates/text.handlebars
 ```
 
 ### Supported Services
@@ -108,7 +111,7 @@ serverless-mailer supports the following 30 service, pre-configured and ready to
 serverless-mailer comes with a `welcome` template for demonstration. You can add/remove templates from the following directory:
 
 ```
-serverless-mailer/lib/templates/
+ekm-mail-queue/lib/templates/
 ```
 
 serverless-mailer uses handlebars as the default template engine. You can use any other template engine by adding it to the module's `package.json` file and update dependencies with `npm install`.
