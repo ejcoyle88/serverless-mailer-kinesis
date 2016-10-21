@@ -1,4 +1,4 @@
-# ekm-mail-queue
+# serverless-mail-kinesis
 An AWS Lambda function for handling email via [nodemailer](https://nodemailer.com/).
 Basically an edited version of [serverless-mailer](https://github.com/eahefnawy/serverless-mailer), all credit to those guys.
 
