@@ -1,0 +1,6 @@
+service: serverless-mailer-rc2
+provider: aws
+
+functions:
+  send:
+    handler: index.send
