@@ -25,7 +25,7 @@ git clone https://github.com/ejcoyle88/ekm-mail-queue
 
 ```
 cd serverless-mailer
-npm install
+yarn install
 ```
 
 - Set Environment Variables
