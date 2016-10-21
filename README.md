@@ -1,8 +1,7 @@
-# serverless-mail-kinesis
-An AWS Lambda function for handling email via [nodemailer](https://nodemailer.com/).
-Basically an edited version of [serverless-mailer](https://github.com/eahefnawy/serverless-mailer), all credit to those guys.
+# ✉️ serverless-mailer-kinesis
+Serverless Service for sending emails via a Kinesis stream. Compatible with Serverless version 1.0.0-rc.2.
 
-This should be connected to an AWS Kinesis stream, and will pick up mail in the queue and fire it off to the selected provider.
+Basically a slightly modified version of [serverless-mailer](https://github.com/eahefnawy/serverless-mailer)
 
 ### Features
 
